@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style copy.css">
+</head>
+<body>
+  
+ <div id="main">
+  <p><u>Welcome To Image Resizer</u></p>
+    <div id="opt1">
+    <p>Choose from predefined sizes given below</p>
+    <label>
+    <input type="radio" name="size" id="size1" value="a4">A4
+    </label>
+  
+    <label>
+    <br><br>
+    <input type="radio" name="size" id="size2" value="passp">passport
+    </label>
+    </div>
+    <div id="opt2">
+    <p>Choose custom size</p>
+
+    <label for="width">Width</label>
+    <input type="number" id="width" placeholder="width" >
+    
+    <br><br>
+    <label for="height">Height</label>
+    <input type="number" id="height" placeholder="height">
+    <label>
+      <br><br>
+      <input type="radio" name="std" id="corp1" value="cm">cm
+        </label>
+      <label>
+        
+        <input type="radio" name="std" id="corp2" value="pix">pixels
+        </label>
+    </div>
+    
+   <input type="file" id="inp" style="display: none;" accept="image/*">
+   <label for="inp" class="but" id="cls">Choose Your file</label>
+   <button id="butt" style="display: none;" onclick=resizeImage()></button>
+   <label for="butt" class="but" style="display: none;" id="sho">Resize & Download</label>
+
+  
+ </div>
+ <div id="img-cont">
+  <img src="somef.jpg" class="img" >
+
+ </div>
+ 
+ <canvas id="canvas" style="display: none;"></canvas>
+<script src="script.js">
+</script>
+</body>
+</html>
